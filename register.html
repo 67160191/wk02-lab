@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div style="width: 30%">
+      <form action="/register" method="POST">
+        <fieldset>
+          <legend>ข้อมูลส่วนตัว</legend>
+          <label for="fname">ชื่อจริง:</label>
+          <input type="text" id="fname" name="firstname" required />
+          <label for="lname">นามสกุล:</label>
+          <input type="text" name="lastname" id="lname" required /> <br />
+          <label for="email" id="emaill">อีเมล</label>
+          <input type="text" name="email" id="email" required />
+          <label for="brith">วันเกิด</label>
+          <input type="date" name="brith" id="brith" />
+          <fieldset>
+            <legend>เพศ</legend>
+            <input type="radio" name="gender" id="male" value="male" />
+            <label for="male">ชาย</label>
+            <input type="radio" name="gender" id="female" value="female" />
+            <label for="female">หญิง</label>
+            <input type="radio" name="gender" id="other" value="other" />
+            <label for="other">อื่นๆ</label><br />
+          </fieldset>
+          <label for="contry">ประเทศ:</label>
+          <select name="contry" id="contry">
+            <option value="">--เลือกประเทศ--</option>
+            <option value="th">ไทย</option>
+            <option value="us">สหรัฐอเมริกา</option>
+          </select>
+          <br />
+          <label for="message">ข้อมูลเพิ่มเติม:</label> <br />
+          <textarea name="message" id="message" cols="50" rows="5"></textarea>
+          <br />
+          <input type="checkbox" name="agree" id="agree" required />
+          <label for="agree">ฉันยอมรับเงื่อนไขการใช้บริการ</label>
+          <!-- เพิ ่มฟิลด์อื่นๆ -->
+        </fieldset>
+        <button type="submit">ส่งข้อมูล</button>
+        <button type="reset">ยกเลิก</button>
+      </form>
+    </div>
+  </body>
+</html>
