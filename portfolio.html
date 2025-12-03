@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- TODO: สร้าง header -->
+    <header>
+      <h1>My portfolio</h1>
+      <nav>
+        <ul>
+          <li><a href="#About_Section"> About section</a></li>
+          <li><a href="#Portfolio_Section">Portfolio section</a></li>
+          <li><a href="#Contract_Section">Contract section</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- TODO: สร้าง main ที่มี -->
+    <!-- 1. About section -->
+    <!--    - หัวข้อ -->
+    <!--    - รูปภาพตัวเอง <img> -->
+    <!--    - ข้อมูลประกอบ -->
+    <main>
+      <section id="About_Section">
+        <article>
+          <h1>เกี่ยวกับฉัน</h1>
+          <h2>รูปภาพตัวเอง</h2>
+          <p><img src="images/Thatee.webp" alt="Thatee" style="width: 30%;" /></p>
+          <p>สวัสดีครับผมชื่อ นายพงษ์พิรัฐ ปัญญามนัสสกุล</p>
+        </article>
+      </section>
+
+      <h2>ทักษะของฉัน</h2>
+      <table border="1px">
+        <tr>
+          <td>เขียนโปรแกรม</td>
+          <td>⭐⭐⭐⭐</td>
+        </tr>
+        <tr>
+          <td>ทำรายงาน</td>
+          <td>⭐⭐⭐</td>
+        </tr>
+      </table>
+      <!-- 2. Portfolio section -->
+      <!--    - List of projects ใช้ <figure> และ <figcaption> -->
+      <section id="Portfolio_Section">
+        <h2>List of projects</h2>
+        <figure>
+          <img src="images/angsila.png" alt="angsila" style="width: 70%;"/>
+          <figcaption>Fig.1 - Funny fan.</figcaption>
+        </figure>
+      </section>
+
+      <!-- 3. Contact section -->
+      <!--    - Contact form -->
+      <section id="Contract_Section">
+        <form action="/register" method="POST">
+          <fieldset>
+            <legend>ข้อมูลส่วนตัว</legend>
+
+            <p>นายพงษ์พิรัฐ ปัญญามนัสสกุล</p>
+            <p>นิสิตสาขา ITDI ชั้นปีที่ 2</p>
+            <a href="mailto:67160191@go.buu.ac.th"><img src="images/Email.png" alt="email" style="width: 5%;"></a>
+            <a href="tel:0950539606"><img src="images/Tel.png" alt="tel" style="width: 5%;"></a>
+        </form>
+      </section>
+    </main>
+    <footer> 
+      <p>&copy; 2025 My Portfolio.All rights reserved.</p> 
+      <nav> 
+        <ul> 
+          <li><a href="#About_Section"> About section</a></li>
+          <li><a href="#Portfolio_Section">Portfolio section</a></li>
+          <li><a href="#Contract_Section">Contract section</a></li>
+        </ul> 
+      </nav> 
+    </footer> 
+  </body>
+</html>
